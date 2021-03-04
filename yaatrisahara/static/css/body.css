@@ -1,0 +1,18 @@
+.h5-title{
+
+
+background: -webkit-linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),-webkit-linear-gradient(0deg, #28476D, #28476D);
+ -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+
+
+}
+.s-xl{
+letter-spacing:15px;}
+@media (max-width:640px){
+.h5-title{
+width:100%;
+font-size:45px;}
+}

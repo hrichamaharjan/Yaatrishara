@@ -1,0 +1,9 @@
+
+.animatednav{
+height:500px !important;
+transition:height 500ms;
+
+}
+.d-block{
+display:block !important
+}

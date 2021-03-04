@@ -1,0 +1,45 @@
+{% include 'yaatri/base.html' %}
+{% block css %}
+<link rel="stylesheet" href="/static/css/body.css">
+{% endblock css %}
+{% block content %}
+<div class="w-screen h-screen bg-black flex justify-center items-center p-10 xl:p-0">
+    <div class='max-w-7xl m-auto grid grid-cols-1 md:grid-cols-2'>
+      <div class="flex flex-col justify-between">
+          <div>
+               <p class='s-xl text-white text-md uppercase font-normal tracking-widest'>A For Adventure</p>
+        <h1 class='text-5xl h5-title md:text-7xl font-bold ls-l text-white mt-2 '>All good things are wild and free.</h1>
+          </div>
+        <div class="my-10 xl:my-0">
+             <button class="text-gray-300 bg-purple-600 hover:text-white px-5 py-3 rounded-md text-lg font-medium">Learn More</button>
+        </div>
+
+      </div>
+      <div>
+        <img src="/static/image/Frame 23.png" alt="">
+      </div>
+    </div>
+  </div>
+
+<!--<div class="bg-black w-screen h-screen flex justify-center items-center">-->
+<!--    <div class="flex justify-between max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">-->
+<!--        <div class="max-w-sm m-auto">-->
+<!--             <p class="text-white ">A FOR ADVENTURE</p>-->
+<!--            <h5 class="text-white h5-title">All good things are  wild and free.</h5>-->
+
+<!--        </div>-->
+<!--        <div>-->
+<!--            <img src="/static/image/Frame 23.png" alt="">-->
+
+<!--        </div>-->
+<!--    </div>-->
+
+
+<!--</div>-->
+{% include 'yaatri/packages.html' %}
+{% block packages %}
+
+
+{% endblock packages %}
+
+{% endblock content %}
