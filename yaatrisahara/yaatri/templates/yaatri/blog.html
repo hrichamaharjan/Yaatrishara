@@ -1,1 +1,23 @@
-cd
+{% include 'yaatri/base.html' %}
+{% block css %}
+<link rel="stylesheet" href="/static/css/blog.css">
+{% endblock css %}
+
+{% block blog %}
+<div class="container">
+    {% for post in posts %}
+     <article class="sub-container" >
+          <div class="sub-subcont">
+            <div class=" underline" >
+              <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted|date:"F d,Y" }}</small>
+            </div>
+            <h2><a  href="#">{{ post.title }}</a></h2>
+            <p >{{ post.content }}</p>
+          </div>
+     </article>
+    {% endfor %}
+</div>
+{% endblock blog %}
+
+
