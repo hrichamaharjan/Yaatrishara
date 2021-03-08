@@ -39,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'yaatri.apps.YaatriConfig'
+    'yaatri.apps.YaatriConfig',
+    'users.apps.UsersConfig',
+'crispy_forms',
+
 
 ]
 
@@ -58,7 +61,7 @@ ROOT_URLCONF = 'yaatrisahara.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,3 +128,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static')
 ]
+LOGIN_REDIRECT_URL='blog'
+LOGIN_URL='login'
