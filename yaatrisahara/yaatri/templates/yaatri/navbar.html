@@ -42,7 +42,7 @@
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="#" class="bg-purple-700 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-            <a href="{%url 'blog'%}" class="text-gray-300 hover:bg-purple-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+            <a href="{%url 'blog'%}" class="text-gray-300 hover:bg-purple-600 hover:text-white px-3 py-2 hover:no-underline rounded-md text-sm font-medium">Blog</a>
             <a href="#" class="text-gray-300 hover:bg-purple-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Plan An Adventure</a>
             <a href="#" class="text-gray-300 hover:bg-purple-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact Us</a>
             <a href="#" class="text-gray-300 hover:bg-purple-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
@@ -89,13 +89,14 @@
           <div>
             <a href="{% url 'login' %}"  class="text-gray-300 hover:bg-purple-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">SignIn</a>
           </div>
+          <div>
+            <a href="{% url 'register' %}"  class="text-gray-300 hover:bg-purple-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Register</a>
+          </div>
 
 
         {% endif %}
 
-        <div>
-          <a href="{% url 'register' %}"  class="text-gray-300 hover:bg-purple-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Register</a>
-        </div>
+
 
 
       </div>

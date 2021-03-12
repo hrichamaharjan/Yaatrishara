@@ -1,32 +1,37 @@
-*{
-  color:white;
+* {
+  color: white;
 }
-i{
-  font-size:16px;
-  color:white;
+i {
+  font-size: 16px;
+  color: white;
 }
 h1 p {
-font-family: 'Sen', sans-serif !important;
-
+  font-family: "Sen", sans-serif !important;
 }
-.send-btn{
+.send-btn {
   color: white;
-  background:#932BFA;
+  background: #932bfa;
 }
-.img{
-  max-width:270px;
-  max-height:100%;
-
+.img-container {
+  max-width: 300px;
 }
-@media (max-width:640px){
-  .img{
-    max-width:100%;
-    max-height:100%
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
+@media (max-width: 640px) {
+  .img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .s-xl {
+    letter-spacing: 3px !important;
   }
 }
-.container{
-  max-width:635px !important;
-  margin:20px 0;
+.container {
+  max-width: 635px !important;
+  margin: 20px 0;
 }
-.s-xl{
-letter-spacing:15px;}
+.s-xl {
+  letter-spacing: 15px;
+}
