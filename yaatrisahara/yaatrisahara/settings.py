@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'yaatri.apps.YaatriConfig',
     'users.apps.UsersConfig',
-'crispy_forms',
+    'yaatripackages.apps.YaatripackagesConfig',
+    'crispy_forms',
 
 
 ]

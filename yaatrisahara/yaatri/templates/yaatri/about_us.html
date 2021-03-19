@@ -93,29 +93,53 @@
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
 
-        <div >
 
-            <div >
-                <form class="form" action="" method="POST" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    <div class="form-group">
-                        <label for="title">Title</label>
-                        <input type="text" class="form-control" id="title" name="title" aria-describedby="title" placeholder="Enter file title">
-                    </div>
-                    <div class="form-group">
-                        <label for="file">File</label>
-                        <input type="text" class="form-control" id="title" name="title" aria-describedby="title" placeholder="Enter file title">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+
+
+
+    <div class="max-w-full md:max-w-7xl m-auto justify-center " >
+      <p class="uppercase tracking-widest s-xl pb-2 text-sm">
+        Lets Plan the Adventure
+      </p>
+      <h1 class="text-3xl md:text-4xl font-bold uppercase underline tracking-wider">
+        Our Best Packages
+      </h1>
+        <form class="form" action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+          <div class="grid grid-rows-3 w-full grid-cols-1 md:grid-rows-1 md:grid-cols-3    " style="gap:100px;">
+
+            <div class="flex flex-col mt-5">
+              <div class=" m-5">
+                <label for="title">First Name</label>
+                <input type="text" class="w-full md:w-80 h-10 outline-none mt-2 mr-3 p-3"  name="title" aria-describedby="title" placeholder="Enter file title">
+              </div>
+              <div class=" m-5">
+                  <label for="file">Last Name</label>
+                  <input type="text" class="w-full md:w-80 h-10 outline-none mt-2 mr-3 p-3"  name="title" aria-describedby="title" placeholder="Enter file title">
+              </div>
 
             </div>
-        </div>
+            <div class="flex flex-col  mt-5 ">
+              <div class=" m-5 px-8">
+                <label for="title">Subject</label>
+                <input type="text" class="w-full md:w-80 h-10 outline-none mt-2 mr-3 p-3"  name="title" aria-describedby="title" placeholder="Enter file title">
+              </div>
+              <div class=" m-5 px-8">
+                <label for="file">Message</label>
+                <textarea rows="4" class="mt-2" cols="42"></textarea>
+              </div>
+            </div>
+            <div><h1 class="font-semibold uppercase text-xl"><i class="fa fa-map-marker " aria-hidden="true" style="font-size:30px ; margin-right:10px;"></i>Kathmandu, Nepal</h1></div>
+          </div>
+
+            <button type="submit" class="text-gray-300 bg-purple-600 hover:text-white px-7 mx-5 py-3 rounded-md text-lg font-medium">Submit</button>
+        </form>
+
     </div>
-  </div>
+
+
+
 
 </div>
 {% endblock aboutus %}

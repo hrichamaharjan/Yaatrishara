@@ -30,4 +30,14 @@ margin:20px;
 .sub-subcont{
 padding-left:20px;
 
+
+}
+.about_img{
+  object-fit:cover;
+  border-radius:50%;
+}
+.about_img_container{
+    max-width:186px;
+  max-height:197px;
+  margin:auto;
 }

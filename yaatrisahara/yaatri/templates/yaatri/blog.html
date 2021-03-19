@@ -4,11 +4,11 @@
 {% endblock css %}
 
 {% block blog %}
-<div class="container">
+<div class="bg-black text-white ">
 
     {% for post in posts %}
-     <article class="sub-container" >
-         <img class="rounded-md" src="{{post.author.profile.image.url}}" alt="">
+     <article class="flex flex-col justify-center items-center mt-0" >
+         <img class="rounded-sm about_img" src="{{post.author.profile.image.url}}" alt="">
           <div class="sub-subcont">
             <div class=" underline" >
               <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
