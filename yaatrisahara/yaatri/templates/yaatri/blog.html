@@ -4,15 +4,23 @@
 {% endblock css %}
 
 {% block blog %}
-<div class="bg-black text-white ">
+
+<img width="500"  class="m-0 absolute top-0 left-0 " src="/static/image/red.png" alt="">
+<img width="500"  class="m-0 absolute top-0 right-0" src="/static/image/orange.png" alt="">
+<div class="bg-black w-screen h-full text-white   ">
+
+
 
     {% for post in posts %}
-     <article class="flex flex-col justify-center items-center mt-0" >
-         <img class="rounded-sm about_img" src="{{post.author.profile.image.url}}" alt="">
+     <article class="flex flex-row items-center justify-center mt-0" >
+         <div>
+             <img  class="rounded-full" src="{{post.author.profile.image.url}}" alt="" width="60" height="10">
+         </div>
+
           <div class="sub-subcont">
             <div class=" underline" >
               <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
-              <small class="text-muted">{{ post.date_posted|date:"F d,Y" }}</small>
+              <small class="text-muted ">{{ post.date_posted|date:"F d,Y" }}</small>
             </div>
             <h2><a  href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
             <p >{{ post.content }}</p>
